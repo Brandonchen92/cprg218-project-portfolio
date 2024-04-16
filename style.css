@@ -13,14 +13,17 @@ p {
 body { 
   background-color: #16161a; 
 }
-
+.smaller-image {
+  width: 25%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
 .hero {
   background-color: #222231;
   background-size: 100%;
   background-position: center;
   color: white;
   text-align: center;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 
 .hero-content {
