@@ -53,25 +53,143 @@
   <p>Below are some of my current designs which I am most proud of. These designs were made from 2023 to now. I'm continuously improving, so this gallery continues to expand.</p>
 </section>
 
+
+<div class="card-gallery">
+  <div class="card">
+    <img src="assets/Photo Composite 1.jpg" alt="Image 1">
+    <div class="card-content">
+      <h3>Card 1</h3>
+      <p>Description for card 1.</p>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <img src="assets/Photo Composite 2.jpg" alt="Image 2">
+    <div class="card-content">
+      <h3>Card 2</h3>
+      <p>Description for card 2.</p>
+    </div>
+  </div>
+  
+  <!-- Add more cards here -->
+</div>
+
 <section id="What I do">
   <p><b>What I do</b></p>
   <p>From Graphic Design, Logo Design, to Photo Manipulation & Composites. I'm versed in After Effects, a well as Premiere, and have edited videos for myself before. I also dabble in some photography. </p>
 <section>
 
+
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+  <style>
+    .accordion {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+    .accordion-item {
+
+      margin-bottom: 10px;
+    }
+    
+    .accordion-btn {
+      color: #ffffff;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      background-color: #312f46;
+      border: none;
+      cursor: pointer;
+      font-family:'Work Sans', sans-serif, monospace;
+      font-size: 18px;
+      border-radius: 5px;
+
+    }
+    
+    .accordion-content {
+      padding: 10px 0;
+      display: none;
+    }
+    
+    .accordion-item.active .accordion-content {
+      display: block;
+    }
+  </style>
+
+
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-btn">Question 1: Do I enjoy photography?</button>
+    <div class="accordion-content">
+      <p>Yes! I'm not a professional, more of an amateur at photography, but I find it very fun, and enjoyable as a pasttime/hobby.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-btn">Question 2: What equipment do I use?</button>
+    <div class="accordion-content">
+      <p>Currently, I don't have enough money for an actual camera, so I use my phone camera. The phone model is: "Samsung S22+".</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-btn">Question 3: Do I sell my photos?</button>
+    <div class="accordion-content">
+      <p>Nope, my photos are no where near good enough to sell for money, its mostly just a recreational activity</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(function(item) {
+      item.addEventListener('click', function() {
+        this.classList.toggle('active');
+        const content = this.querySelector('.accordion-content');
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+        } else {
+          content.style.display = 'block';
+        }
+      });
+    });
+  });
+</script>
+</body>
+
+
+
 <section id="Contact Me">    
   <p><b>Contact Me!</b></p>
-  <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+  <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+   
+    <p class="center"><a href="https://www.instagram.com/dial.05" target="_blank">Instagram</a></p>
+
+    <p class="center"><a href="mailto:brandonchen2005@gmail.com">brandonchen2005@gmail.com</a></p>
+
 </section>
 
   <body>
 
 
 
-
-    <footer>
+    <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2024 Brandon Chen</p>
-        <ul class="footer-links">
+
+        &copy; <span id="2024"></span>2024 Brandon Chen. All rights reserved.
+        <ul class="footer-links"> <a href="mailto:brandonchen2005@gmail.com">brandonchen2005@gmail.com</a>
         </ul>
       </div>
     </footer>

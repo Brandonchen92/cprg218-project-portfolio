@@ -13,10 +13,14 @@ p {
 body { 
   background-color: #16161a; 
 }
+
+
 .smaller-image {
   width: 25%; /* Adjust as needed */
   height: auto; /* Maintain aspect ratio */
 }
+
+
 .hero {
   background-color: #222231;
   background-size: 100%;
@@ -77,34 +81,68 @@ footer {
   background-color: #222231;
   color: white;
   text-align: center;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
-.footer-content {
-  max-width: 1000px;
-  margin: 0 auto;
+.center {
+  text-align: center;
+  
+  color: white;
 }
 
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-}
-
-.footer-links li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.footer-links li:last-child {
-  margin-right: 0;
-}
-
-.footer-links a {
+.footer a {
   color: white;
   text-decoration: none;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.center a {
+    color: white;
+    text-decoration: none;
+  }
+
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+.card-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 700px; /* Adjust as needed */
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 40px); /* Adjust as needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 40px); /* Adjust as needed */
+  }
 }
