@@ -14,3 +14,94 @@ body {
   background-color: #16161a; 
 }
 
+.hero {
+  background-color: #222231;
+  background-size: 100%;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5em;
+}
+
+nav {
+  background-color: #312f46;
+  display: flex; /* Change display to flex */
+  justify-content: center; /* Horizontally center the items */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15;
+  border-radius: 24px;
+  display: flex; /* Change display to flex */
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 24px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #675085;
+}
+footer {
+  background-color: #222231;
+  color: white;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
