@@ -41,8 +41,8 @@
 </nav>
 
 
-<h2>Welcome.</h2>
-
+<h1>Welcome.</h1>
+<h2>This is my portfolio.</h2>
 <section id="About Me">
   <p><b>About Me</b></p>
   <p>My name is Brandon Chen. I'm currently a student at SAIT, learning about Graphic Design. "diaL" is the online username that I go by, in which I show off my skills & designs.</p>
@@ -110,7 +110,7 @@
 
 
   <div class="card">
-    <img src="assets/dial_logo.png" alt="Image 2">
+    <img src="assets/Album Cover.png" alt="Image 2">
     <div class="card-content">
       <h2>Card 2<h2>
       <p>Description for card 2.</p>
@@ -118,7 +118,13 @@
   </div>
 
 
-
+  <div class="card">
+    <img src="assets/Porch 911 Graphic.png" alt="Image 2">
+    <div class="card-content">
+      <h2>Card 2<h2>
+      <p>Description for card 2.</p>
+    </div>
+  </div>
 
 
   <!-- Add more cards here -->
@@ -227,58 +233,22 @@
    
     <p class="center"><a href="https://www.instagram.com/dial.05" target="_blank">Instagram</a></p>
 
-    <p class="center"><a href="mailto:brandonchen2005@gmail.com">brandonchen2005@gmail.com</a></p>
+    <p class="center"><a href='mail&#116;o&#58;b&#114;a&#37;6Edonch&#101;&#110;%3&#50;&#48;%3&#48;5&#64;g%6Da&#105;&#108;&#46;c%&#54;Fm'>b&#114;andonc&#104;en20&#48;5&#64;g&#109;ail&#46;c&#111;m</a></p>
 
 </section>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feedback Form</title>
-<link rel="stylesheet" href="styles.css">
+
+
 </head>
 <body>
-
-<div class="container">
-  <h1>Feedback & Suggestions</h1>
-  <form id="feedbackForm" action="https://formspree.io/f/mayraynr" method="POST">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
-  <div id="feedbackConfirmation" style="display: none;">
-    <a>Thank you for your feedback!</a>
-  </div>
-</div>
-
-<script src="script.js"></script>
+    <h1>Curious about the Weather in Calgary?</h1>
+    <div id="weather-info"></div>
+    <script>
+        const apiKey = '108dd9a67c96f23039937fe6f3c91963';
+        const city = 'Calgary';
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    </script>
 </body>
-</html>
 
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clock Widget</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="clock">
-  <h2>What Time is it?</h2>
-  <div id="time"></div>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
-
-<h2 style="line-height: 5rem">Local Time</h2>
 
 
 
