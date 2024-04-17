@@ -79,6 +79,8 @@ nav ul li a:hover {
 }
 footer {
   background-color: #222231;
+  background-size: 100%;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 100px 0;
