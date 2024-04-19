@@ -1,12 +1,15 @@
 
 h1 {
     text-align: center
+    
 }
 h2 {
     text-align: center
+    
 }
 p {
     text-align: center
+    
 }
 
 
@@ -76,14 +79,6 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #675085;
-}
-footer {
-  background-color: #222231;
-  background-size: 100%;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 100px 0;
 }
 
 .center {
@@ -173,3 +168,46 @@ button {
 button:hover {
   background-color: #675085; /* Change color on hover */
 }
+
+
+
+
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #675085;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#scrollBtn:hover {
+  background-color: #493563;
+}
+
+
+
+
+footer {
+  background-color: #222231;
+  background-size: 100%;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+}
+
