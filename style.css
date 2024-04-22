@@ -93,7 +93,7 @@ nav ul li a:hover {
 }
 
 .center a {
-    color: white;
+    color: rgb(138, 175, 255);
     text-decoration: none;
   }
 
@@ -211,3 +211,37 @@ footer {
   padding: 100px 0;
 }
 
+    .accordion {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    
+    .accordion-item {
+
+      margin-bottom: 10px;
+    }
+    
+    .accordion-btn {
+      color: #ffffff;
+      width: 100%;
+      padding: 15px;
+      text-align: center;
+      background-color: #312f46;
+      border: none;
+      cursor: pointer;
+      font-family:'Work Sans', sans-serif, monospace;
+      font-size: 18px;
+      border-radius: 5px;
+
+    }
+    
+    .accordion-content {
+      padding: 10px 0;
+      display: none;
+    }
+    
+    .accordion-item.active .accordion-content {
+      display: block;
+    }

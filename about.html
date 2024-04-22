@@ -65,43 +65,6 @@
   <p><b>FAQ</b></p>
   <p>Frequently asked questions. Some of these questions I have concrete answers to, however some are dynamic and destined to change, as I might not currently have a concrete answer for them.</p>
 <section>
-          
-  <style>
-    .accordion {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    
-    .accordion-item {
-
-      margin-bottom: 10px;
-    }
-    
-    .accordion-btn {
-      color: #ffffff;
-      width: 100%;
-      padding: 15px;
-      text-align: center;
-      background-color: #312f46;
-      border: none;
-      cursor: pointer;
-      font-family:'Work Sans', sans-serif, monospace;
-      font-size: 18px;
-      border-radius: 5px;
-
-    }
-    
-    .accordion-content {
-      padding: 10px 0;
-      display: none;
-    }
-    
-    .accordion-item.active .accordion-content {
-      display: block;
-    }
-  </style>
 
 
 <div class="accordion">
@@ -112,36 +75,23 @@
     </div>
   </div>
   <div class="accordion-item">
-    <button class="accordion-btn">Question 2: What equipment do I use?</button>
+    <button class="accordion-btn">Where do I operate out of?</button>
     <div class="accordion-content">
-      <p>Currently, I don't have enough money for an actual camera, so I use my phone camera. The phone model is: "Samsung S22+".</p>
+      <p>As of right now, I am currently situated in Calgary, Alberta. Since my family lives here, SAIT is also located in Calgary. I have no plans to move out of Calgary at the moment. Though I am rather tired of the freezing winters, and the cold windy springs.</p>
     </div>
   </div>
   <div class="accordion-item">
-    <button class="accordion-btn">Question 3: Do I sell my photos?</button>
+    <button class="accordion-btn">What kind of services do I offer?</button>
     <div class="accordion-content">
-      <p>Nope, my photos are no where near good enough to sell for money, its mostly just a recreational activity</p>
+      <p>As previously stated, my main services range from: Poster design, Logo design, Illustration, UI & UX design, Editing, and Motion graphics. As of right now I am still working on finding a style I enjoy the most. I always enjoy learning new things, and am open to all kinds of different types of designs and services!</p>
     </div>
   </div>
 </div>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const accordionItems = document.querySelectorAll('.accordion-item');
+<script src="script.js"></script>
+</body>
+</html>
 
-    accordionItems.forEach(function(item) {
-      item.addEventListener('click', function() {
-        this.classList.toggle('active');
-        const content = this.querySelector('.accordion-content');
-        if (content.style.display === 'block') {
-          content.style.display = 'none';
-        } else {
-          content.style.display = 'block';
-        }
-      });
-    });
-  });
-</script>
 
 
 <link rel="stylesheet" href="styles.css">
